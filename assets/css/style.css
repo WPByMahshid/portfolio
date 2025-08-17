@@ -1,0 +1,44 @@
+    @font-face {
+      font-family: 'studio-feixen';
+      src: url('/assets/font/studio-feixen-sans-variable.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'IRANYekan';
+      src: url('/assets/font/IRANYekanWebMedium.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+    body {
+      font-family: 'IRANYekan';
+      background: #e7e5e4;
+      /* color: #595f7a; */
+    }
+    *, body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'peyda-medium';
+    }
+    a {
+      text-decoration: none;
+      color: #2d2d2d;
+    }
+    .font-orbitron {
+      font-family: 'studio-feixen', sans-serif;
+    }
+    .menu-item {
+      opacity: 0;
+      transform: translateY(-30px);
+      transition: all 0.4s ease;
+    }
+
+    .menu-item.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    img {
+      pointer-events: none;
+      user-select: none;
+    }

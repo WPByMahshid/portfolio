@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> پروژه شماره یک </title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="assets/css/style.css"  rel="stylesheet">
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+    <div class="w-full max-w-3xl">
+      <!-- اسلایدر -->
+      <div class="swiper rounded-2xl shadow-lg">
+        <div class="swiper-wrapper">
+          <!-- اسلاید 1 -->
+          <div class="swiper-slide">
+            <img src="assets/image/project-1-1.png" class="w-full h-64 md:h-96" alt="اسلاید ۱"/>
+          </div>
+          <!-- اسلاید 2 -->
+          <div class="swiper-slide">
+            <img src="assets/image/project-1-2.png" class="w-full h-64 md:h-96" alt="اسلاید ۲"/>
+          </div>
+          <!-- اسلاید 3 -->
+          <div class="swiper-slide">
+            <img src="assets/image/project-1-3.png" class="w-full h-64 md:h-96" alt="اسلاید ۳"/>
+          </div>
+        </div>
+
+        <!-- کنترل‌ها -->
+        <div class="swiper-button-next text-white after:!text-2xl"></div>
+        <div class="swiper-button-prev text-white after:!text-2xl"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- متن زیر اسلایدر -->
+      <div class="mt-6 text-center bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-bold mb-2"> طراحی سایت با الهام از سایت ماسیمودوتی </h2>
+        <p class="text-md leading-relaxed">
+          سایتی مدرن و ریسپانسیو، طراحی شده به سبک ماسیمودیتی با فریم‌ورک Bootstrap برای تجربه‌ای حرفه‌ای و چشم‌نواز.
+
+        </p>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        // effect: "fade", // می‌تونی بذاری "slide", "cube", "coverflow", ...
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        speed: 1000, // سرعت انیمیشن (۱ ثانیه)
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+
